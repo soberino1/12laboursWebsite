@@ -1,0 +1,245 @@
+body {
+  font-family: 'Hanken Grotesk', sans-serif; /* Set the font for the entire website */
+}
+
+.header {
+  font-family: 'Little Boots', sans-serif; /* Apply Little Boots font to the header */
+  color: #697644; /* Adjust header text color if needed */
+}
+
+.navbar {
+  position: fixed; /* Keep the navbar fixed at the top */
+  width: 100%; /* Ensure the navbar spans the full width */
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Blurs the content behind the navbar */
+  z-index: 9999; /* Ensures the navbar is above other content */
+  transition: background 0.3s ease; /* Smooth transition for background changes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.7); /* More opaque when scrolled */
+}
+
+.nav-link {
+  color: #ffffff; /* Set the color of the nav links to white for contrast against the background */
+  padding: 10px 15px; /* Add padding to links for better spacing */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-link:hover {
+  color: #e0e0e0; /* Light gray on hover for better visibility */
+  transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* Change toggler icon color to white */
+}
+
+
+.logo {
+  width: 40px; /* Set a suitable width for the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add space between the logo and text */
+  display: inline-block; /* Ensure the logo aligns properly */
+}
+
+
+
+
+#features {
+  background: linear-gradient(to bottom right, #BAC4A7, #BAC4A7); /* Darker green gradient */
+  padding: 50px 0; /* Add some padding */
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.feature-card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow effect on hover */
+}
+
+.card-img-top {
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+
+
+.hero {
+  
+  min-height: 400px; /* Adjust height as needed */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Adding some text shadow for better readability */
+  padding: 40px 0; /* Ensure there's enough padding */
+}
+
+
+
+.card {
+  border: none;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #28a745; /* Darker green for card titles */
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Additional Styles for Buttons */
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+
+.download-section {
+  background: linear-gradient(to bottom right, #D4D9D1, #D4D9D1); /* Match gradient with other sections */
+  padding: 50px 0; /* Adjust padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h4 {
+  margin-top: 20px; /* Space above headings */
+  font-weight: 600; /* Bold headings */
+}
+
+.download-buttons {
+  margin-top: 20px; /* Space above buttons */
+}
+
+.btn-download {
+  padding: 15px 30px; /* Increase padding for buttons */
+  font-size: 18px; /* Larger text for readability */
+  border-radius: 25px; /* Rounded button corners */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions for effects */
+  text-decoration: none; /* Remove underline */
+}
+
+.ios-button {
+  background-color: #007aff; /* iOS button color */
+  color: white; /* Text color */
+}
+
+.android-button {
+  background-color: #3DDC84; /* Android button color */
+  color: white; /* Text color */
+}
+
+.btn-download:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.btn-download:active {
+  transform: translateY(0); /* Reset effect on click */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect when active */
+}
+
+.contact-section {
+  background: linear-gradient(to bottom right, #BAC4A7, #BAC4A7); /* Light green gradient */
+  border-radius: 10px; /* Rounded corners */
+  padding: 50px 0; /* Add padding */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.form-control {
+  border: 1px solid #b2e0b2; /* Light green border for inputs */
+  border-radius: 5px; /* Rounded corners for inputs */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.form-control:focus {
+  border-color: #66bb6a; /* Darker green when focused */
+  box-shadow: 0 0 5px rgba(102, 187, 106, 0.5); /* Glow effect */
+}
+
+.btn-success {
+  background-color: #66bb6a; /* Button color */
+  border: none; /* Remove border */
+  border-radius: 25px; /* Rounded button corners */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions for effects */
+}
+
+.btn-success:hover {
+  background-color: #558b2f; /* Darker green on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-success:active {
+  transform: translateY(0); /* Reset effect on click */
+}
+
+
+
+.about-section {
+  background: linear-gradient(to bottom right, #7a8c5c, #9ca07c); /* Softer gradient with better contrast */
+  padding: 50px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: #f9f9f9; /* Light color for better readability against background */
+}
+
+.member {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.member-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for image depth */
+}
+
+.member-img:hover {
+  transform: scale(1.05);
+}
+
+h5 {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #2f4f2f; /* Darker green for names, providing contrast */
+}
+
+p {
+  color: #333; /* Darker shade for better readability on light backgrounds */
+  font-size: 15px; /* Slightly larger font for readability */
+}
+
